@@ -1,0 +1,95 @@
+:root {
+    --height: 70vh;
+    --width: 100%;
+}
+html{
+    height: auto;
+}
+body{
+    margin-top:0px;
+    margin-left: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: black;
+}
+.main{
+    
+    background: black;
+}
+.about{
+    height: var(--height);
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+.tribute{
+    height: var(--height);
+    background: white;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tribute .text{
+    width: 25%;
+    font-size: 20px;
+    
+}
+
+.tribute .image{
+    width: 50%;
+    
+}
+.tribute .image img{
+    margin-bottom: -36px;
+    overflow-y: hidden;
+}
+.biography{
+    z-index: 10;
+    height: var(--height);
+    background: black;
+    color: whitesmoke;
+    text-align: center;
+    /* margin: 20px auto; */
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.biography p{
+    width: 70%;
+    
+}
+.biography hr{
+    width: 70%;
+    
+}
+
+@media screen and (max-width: 600px){
+    :root {
+        --height: 32vh;
+        --width: 100%;
+    }
+    .tribute .text{
+        width: 35%;
+        font-size: 12px;
+        
+    }
+    .tribute .image img{
+        margin-bottom: -122px;
+        overflow-y: hidden;
+        height: 110px;
+    }
+    .biography{
+        font-size: 10px;
+    }
+    .biography hr{
+        width: 50%;
+        
+    }
+}
